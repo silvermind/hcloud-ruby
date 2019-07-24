@@ -68,9 +68,9 @@ module Hcloud
       action(request(base_path('actions/change_type'), j: query))[0]
     end
 
-    def enable_backup(backup_window:)
+    def enable_backup()
       action(request(base_path('actions/enable_backup'),
-                     j: { backup_window: backup_window }))[0]
+                     j: { }))[0]
     end
 
     def attach_iso(iso:)
